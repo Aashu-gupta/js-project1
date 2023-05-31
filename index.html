@@ -6,11 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Timer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47c55a240e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="background">
+        <div id="initialText" class="container">
+          <div class="text_container">
+            <h2>Kindly Enter Your Date Of Birth</h2>
+          </div>
+        </div>
 
+        <div id="afterDobText" class="container hide">
+            <div class="text_container">
+                <h2>You live</h2>
+                <div class="time_container">
+                  <div class="year">
+                    <p id="p_year">0</p><p>years</p>
+                  </div>
+                  <div class="month">
+                    <p id="p_month">0</p>
+                    <p>months</p>
+                  </div>
+                  <div class="day">
+                    <p id="p_day">0</p>
+                    <p>days</p>
+                  </div>
+                </div>
+                <h2>Till NOW</h2>
+              
+            </div>
+        </div>
 
+        <div class="setting">
+                <i id="settingIcon" class="fa-solid fa-calendar-days fa-beat"></i>
+            <div id="settingContent" class="hide">
+                <input id="dobInput" type="date">
+                <button id="dobBtn">Add DOB</button>
+            </div>
+        </div>
 
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

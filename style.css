@@ -1,3 +1,86 @@
-.hello{
-    background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: oswald, sans-serif;
+  font-size: 10px;
+}
+
+.background {
+  background-image: url(images/mountain.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container h2 {
+ 
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+}
+.text_container{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* after dob input */
+.time_container {
+  gap: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.time_container p {
+  font-size: 4rem;
+}
+
+[id^="p_"] {
+  text-align: center;
+  color: white;
+}
+
+/* dob setting */
+.setting {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#settingIcon {
+  color: aqua;
+  font-size: 4rem;
+}
+
+#settingContent input {
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+#settingContent button {
+  padding: 10px 5px;
+  background-color: aqua;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.hide {
+  display: none;
 }
